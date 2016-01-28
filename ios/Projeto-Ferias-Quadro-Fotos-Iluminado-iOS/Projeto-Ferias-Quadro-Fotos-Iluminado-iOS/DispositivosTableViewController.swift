@@ -111,7 +111,7 @@ class DispositivosTableViewController: UITableViewController, CBCentralManagerDe
         if let peripheralDevice = peripheralDevice{
             peripheralDevice.discoverServices(nil)
             // Muda o texto da navigation Controller
-            if let navigationController = navigationController {
+            if let _ = navigationController {
                 navigationItem.title = "Connected to \(deviceName)"
             }
         }
@@ -128,9 +128,9 @@ class DispositivosTableViewController: UITableViewController, CBCentralManagerDe
             let thisService = service as? CBService
             
             // Mostra a caracteristicas de cada servico
-            if let thisService = thisService{
+            if let thisService = thisService {
                 peripheral.discoverCharacteristics(nil, forService: thisService)
-                if let navigationController = navigationController{
+                if let _ = navigationController{
                     navigationItem.title = "Discovered Service for \(deviceName)"
                 }
             }
@@ -147,12 +147,12 @@ class DispositivosTableViewController: UITableViewController, CBCentralManagerDe
         // Verifica o UUID e cada caracteristica dos servicos
         // check the uuid of each characteristic to find config and data characteristics
         for charateristic in service.characteristics! {
-            let thisCharacteristic = charateristic as! CBCharacteristic
+            let thisCharacteristic = charateristic 
             // Notifica se tem tem alguma caracteristica nova
             peripheral.setNotifyValue(true, forCharacteristic: thisCharacteristic)
             
             //Muda o titulo da navBar
-            if let navigationController = navigationController{
+            if let _ = navigationController{
                 navigationItem.title = "Discovered Characteristic for \(deviceName)"
             }
             deviceCharacteristics = thisCharacteristic
@@ -205,8 +205,8 @@ class DispositivosTableViewController: UITableViewController, CBCentralManagerDe
     class func writeValue(data: String){
         
         let data = (data as NSString).dataUsingEncoding(NSUTF8StringEncoding)
-        
-        if let peripheralDevice = peripheralDevice{
+
+        if let peripheralDevice = peripheralDevice {
             
             if let deviceCharacteristics = deviceCharacteristics {
                 

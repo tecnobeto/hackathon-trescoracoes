@@ -16,15 +16,21 @@ class CafeteiraViewController: UIViewController {
     
     @IBAction func callCoffee(sender: AnyObject) {
         print("Ta Coffe")
+        DispositivosTableViewController.writeValue("a")
+        
     }
     
     @IBAction func callHotWater(sender: AnyObject) {
         print("Hot Water")
+        DispositivosTableViewController.writeValue("b")
+        
     }
     
     
     @IBAction func callColdWater(sender: AnyObject) {
         print("Cold Water")
-
+        DispositivosTableViewController.writeValue("c")
+        
+        
     }
 }

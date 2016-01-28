@@ -57,7 +57,6 @@
 		DB8493B71C5A404900171FE9 /* BotChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8493B61C5A404900171FE9 /* BotChatViewController.swift */; };
 		DB9F39141B3FA84E001D1D56 /* DispositivosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F39131B3FA84E001D1D56 /* DispositivosTableViewController.swift */; };
 		DBC3FA9D1B3F8F3F00FC004C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3FA9C1B3F8F3F00FC004C /* AppDelegate.swift */; };
-		DBC3FA9F1B3F8F3F00FC004C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3FA9E1B3F8F3F00FC004C /* ViewController.swift */; };
 		DBC3FAA21B3F8F3F00FC004C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC3FAA01B3F8F3F00FC004C /* Main.storyboard */; };
 		DBC3FAA41B3F8F3F00FC004C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC3FAA31B3F8F3F00FC004C /* Images.xcassets */; };
 		DBC3FAA71B3F8F3F00FC004C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC3FAA51B3F8F3F00FC004C /* LaunchScreen.xib */; };
@@ -173,7 +172,6 @@
 		DBC3FA971B3F8F3F00FC004C /* Projeto-Ferias-Quadro-Fotos-Iluminado-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto-Ferias-Quadro-Fotos-Iluminado-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC3FA9B1B3F8F3F00FC004C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC3FA9C1B3F8F3F00FC004C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBC3FA9E1B3F8F3F00FC004C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBC3FAA11B3F8F3F00FC004C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBC3FAA31B3F8F3F00FC004C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBC3FAA61B3F8F3F00FC004C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -387,13 +385,12 @@
 				DB9F39131B3FA84E001D1D56 /* DispositivosTableViewController.swift */,
 				DB117C3B1B4637D700059E77 /* QuadrosViewController.swift */,
 				DBC3FA9C1B3F8F3F00FC004C /* AppDelegate.swift */,
-				DBC3FA9E1B3F8F3F00FC004C /* ViewController.swift */,
 				DB8493221C5A392200171FE9 /* CafeteiraViewController.swift */,
+				DB8493B61C5A404900171FE9 /* BotChatViewController.swift */,
 				DBC3FAA01B3F8F3F00FC004C /* Main.storyboard */,
 				DBC3FAA31B3F8F3F00FC004C /* Images.xcassets */,
 				DBC3FAA51B3F8F3F00FC004C /* LaunchScreen.xib */,
 				DBC3FA9A1B3F8F3F00FC004C /* Supporting Files */,
-				DB8493B61C5A404900171FE9 /* BotChatViewController.swift */,
 			);
 			path = "Projeto-Ferias-Quadro-Fotos-Iluminado-iOS";
 			sourceTree = "<group>";
@@ -547,7 +544,6 @@
 				DB84938E1C5A3DC600171FE9 /* JSQMessagesViewController.m in Sources */,
 				DB8493A51C5A3DC600171FE9 /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
 				DB8493A01C5A3DC600171FE9 /* JSQMessagesCellTextView.m in Sources */,
-				DBC3FA9F1B3F8F3F00FC004C /* ViewController.swift in Sources */,
 				DB8493881C5A3DC600171FE9 /* NSString+JSQMessages.m in Sources */,
 				DB8493B51C5A3E1F00171FE9 /* JSQSystemSoundPlayer.m in Sources */,
 				DB9F39141B3FA84E001D1D56 /* DispositivosTableViewController.swift in Sources */,
