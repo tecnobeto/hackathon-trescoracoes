@@ -35,13 +35,16 @@ class DispositivosTableViewController: UITableViewController, CBCentralManagerDe
     }
     
     //Acontece quando a tela ainda não carregou os elementos
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
+        abriuTela = false
         // Limpa os elementos do dicionario
         devices.removeAll(keepCapacity: false)
         devicesRSSI.removeAll(keepCapacity: false)
         
         // Inicializa o Manager/Dispositivo mestre (meu iphone) Bluetooth
         activeCentralManager = CBCentralManager(delegate: self, queue: nil)
+        
+        
         
         //Inicia a tableView com conteudo limpo
         let refreshControl = UIRefreshControl()
@@ -161,7 +164,7 @@ class DispositivosTableViewController: UITableViewController, CBCentralManagerDe
         //                }
         
         if(!abriuTela){
-            self.performSegueWithIdentifier("sugueQuadroFotos", sender: self)
+            self.performSegueWithIdentifier("segueCoffeViewController", sender: self)
             abriuTela = true
         }
         
@@ -169,6 +172,7 @@ class DispositivosTableViewController: UITableViewController, CBCentralManagerDe
         
         
     }
+    
     
     // Quando é recebido algo do Device - Retorno
     func peripheral(peripheral: CBPeripheral, didUpdateValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
